@@ -1,16 +1,174 @@
-# React + Vite
+# 🎬 DebugMedia – Movie Search Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **Movie Search Web Application** built using **React + Vite**, featuring authentication, protected routes, debounced search, TMDB API integration, and Dark/Light theme support.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Screenshots
 
-## React Compiler
+*Add screenshots of:*
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Sign In Page
+2. Home / Search Page
+3. Movie Results Grid
+4. Dark Mode View
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🔐 Login Credentials
+
+```
+Email: test
+Password: test
+```
+
+---
+
+## ✨ Features
+
+* 🔐 **Authentication System** using React Context
+* 🛡 **Protected & Public Routes** (React Router v6)
+* 🎥 **Movie Search** powered by **TMDB API**
+* ⏳ **Debounced Search Input** for optimized API calls
+* 🌗 **Dark / Light Theme Toggle** with persistence
+* 💾 **LocalStorage Token Management**
+* 📱 **Fully Responsive UI**
+* 🎨 **CSS Variables for Theme Management**
+
+---
+
+## 🧠 Tech Stack
+
+* **Frontend:** React + Vite
+* **Routing:** React Router v6
+* **State Management:** Context API
+* **API:** TMDB (The Movie Database)
+* **Styling:** CSS + CSS Variables
+* **Icons:** React Icons
+
+---
+
+## 🗂 Folder Structure
+
+```
+src/
+│
+├── Components/
+│   ├── Navbar/
+│   ├── Search/
+│   ├── SearchList/
+│   └── SignIn/
+│
+├── context/
+│   ├── AuthContext.jsx
+│   ├── MovieContext.jsx
+│   └── ThemeContext.jsx
+│
+├── hooks/
+│   └── useDebounce.js
+│
+├── routes/
+│   ├── ProtectedRoute.jsx
+│   └── PublicRoute.jsx
+│
+├── styles/
+│   └── theme.css
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+1. **Clone the repository**
+
+2. **Install dependencies**
+
+```bash
+npm install
+```
+
+3. **Run the project**
+
+```bash
+npm run dev
+```
+
+4. Open browser at:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🔑 TMDB API Setup
+
+1. Create an account at [https://www.themoviedb.org/](https://www.themoviedb.org/)
+2. Generate an API key
+3. Replace the API key inside `MovieContext.jsx`
+
+```js
+https://api.themoviedb.org/3/search/movie?api_key=YOUR_API_KEY
+```
+
+---
+
+## 🧩 Key Concepts Implemented
+
+### ✅ Authentication
+
+* Context-based auth state
+* Token stored in localStorage
+* Auto-login on refresh
+
+### ✅ Routing
+
+* Protected routes for authenticated users
+* Public routes for login page
+
+### ✅ Debounce
+
+* Custom `useDebounce` hook
+* Prevents unnecessary API calls
+
+### ✅ Theme Management
+
+* CSS variables
+* `data-theme` attribute
+* Persistent theme preference
+
+---
+
+## 🧠 Interview Explanation (Short)
+
+> "This project demonstrates my understanding of React fundamentals including Context API, routing, custom hooks, API integration, and responsive UI design. I implemented authentication, protected routes, debounced search, and theme management using best practices."
+
+---
+
+## 📌 Future Enhancements
+
+* 🎬 Movie Details Page
+* ⭐ Ratings & Release Year Overlay
+* ❤️ Favorites / Watchlist
+* 🔄 Infinite Scroll
+
+---
+
+## 👨‍💻 Author
+
+**Arif A**
+Junior Software Engineer (Fresher)
+
+---
+
+## 📜 License
+
+This project is for learning and demonstration purposes.
+
+---
+
+⭐ *If you like this project, don’t forget to star the repository!*
