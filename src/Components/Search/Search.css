@@ -1,0 +1,29 @@
+.Search-box {
+  width: 100%;
+  max-width: 846px;
+  height: 54px;
+  margin: 30px auto;
+  display: block;
+
+  padding: 15px;
+  padding-right: 200px;
+
+  font-size: 22px;
+  border-radius: 20px;
+
+  border: 1px solid var(--border-color);
+  background-color: var(--input-bg);
+  color: var(--text);
+
+  outline: none;
+}
+
+.Search-box::placeholder {
+  color: var(--placeholder-color);
+}
+@media (max-width: 768px) {
+  .Search-box {
+    font-size: 18px;
+    padding-right: 15px;
+  }
+}
