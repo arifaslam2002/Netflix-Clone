@@ -1,4 +1,4 @@
-# 🎬 DebugMedia – Movie Search Application
+# 🎬 Netflix Clone – Movie Search Application
 
 A modern **Movie Search Web Application** built using **React + Vite**, featuring authentication, protected routes, debounced search, TMDB API integration, and Dark/Light theme support.
 
